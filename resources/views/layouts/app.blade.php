@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('Todo Day', 'title') | </title>
+    <title>Todo Day | @yield('title', 'Unknown page')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -17,12 +17,17 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+    <!-- Fontawesome style -->
+    <link href="{{ asset('css/fontawsome.all.css') }}" rel="stylesheet">
+    <!-- css style -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
         <!-- navbar -->
         @include('layouts.navbar')
+        <!-- sidebar -->
+        @include('layouts.sidebar')
 
         <main class="py-4">
             <div class="container">
