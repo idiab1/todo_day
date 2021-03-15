@@ -4,13 +4,26 @@
 // Variables
 @import 'helpers/variables';
 
-
+// Mixins
 @import 'helpers/mixins';
 
-
+// Extends
 @import 'helpers/extends';
 
+// Global
+@import 'layout/global';
 
+// Navbar
+@import 'layout/navbar';
+
+// Sidebar
+@import 'layout/sidebar';
+
+// Style
+@import 'layout/style';
+
+// Footer
+@import 'layout/footer';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
