@@ -1,5 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
+/* Sidebar */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  background: #111;
+}
+
+/* End of sidebar */
+
+.main-content {
+  background: #061141;
+}
+
+/* Todo header */
+
+/* End of Todo header */
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

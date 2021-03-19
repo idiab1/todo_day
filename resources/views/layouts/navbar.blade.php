@@ -1,9 +1,9 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
     <div class="container">
-        <!-- Menu bars icon -->
+        {{-- <!-- Menu bars icon -->
         <div class="bars-box">
             <i class="fas fa-bars"></i>
-        </div>
+        </div> --}}
         <a class="navbar-brand px-2" href="{{ url('/') }}">
             {{-- {{ config('app.name', 'Laravel') }} --}}
             Todo Day

@@ -5,21 +5,20 @@
 @endsection
 
 @section('content')
-{{-- <div class="row justify-content-center">
-    <div class="col-md-8">
-        <div class="card">
-            <div class="card-header">{{ __('Dashboard') }}</div>
-
-            <div class="card-body">
-                @if (session('status'))
-                    <div class="alert alert-success" role="alert">
-                        {{ session('status') }}
+<div class="todos-header">
+    <div class="row">
+        <div class="col-md-8 col-sm-6 m-auto">
+            <div class="todo-form">
+                <form action="" method="post">
+                    @csrf
+                    <div class="form-group">
+                        <!-- input field for add todo -->
+                        <input class="form-control" type="text" name="todo_name" id="todo_name" placeholder="what to do now ?" required autocomplete="off">
+                        <input class="btn btn-denger" type="submit" value="Add">
                     </div>
-                @endif
-
-                {{ __('You are logged in!') }}
+                </form>
             </div>
         </div>
     </div>
-</div> --}}
+</div>
 @endsection

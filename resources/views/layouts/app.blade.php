@@ -27,9 +27,9 @@
         <!-- navbar -->
         @include('layouts.navbar')
         <!-- sidebar -->
-        @include('layouts.sidebar')
+        {{-- @include('layouts.sidebar') --}}
 
-        <main class="py-4">
+        <main class="py-4 main-content">
             <div class="container">
                 @yield('content')
             </div>

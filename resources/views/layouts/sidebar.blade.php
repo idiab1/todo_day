@@ -1,6 +1,7 @@
 @if(Auth::user())
 
-<div class="sidebar">
+<div class="sidergb(0, 16, 87)
+
     <nav id="sidebar-menu">
         <ul class="navbar-nav list-unstyled">
             <li class="nav-item">
