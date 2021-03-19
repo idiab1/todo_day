@@ -1,5 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
+/* Navbar */
+
+.navbar {
+  background: #061141;
+}
+
+.navbar .navbar-brand {
+  font-weight: 600;
+}
+
+.navbar .navbar-nav .dropdown-menu {
+  margin-top: 10px;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item i {
+  margin-right: 5px;
+}
+
+/* End of Navbar */
+
 /* Sidebar */
 
 .sidebar {
@@ -11,10 +31,6 @@
 }
 
 /* End of sidebar */
-
-.main-content {
-  background: #061141;
-}
 
 /* Todo header */
 

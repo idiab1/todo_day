@@ -1,10 +1,10 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
+<nav class="navbar navbar-expand-md navbar-dark shadow-sm">
     <div class="container">
         {{-- <!-- Menu bars icon -->
         <div class="bars-box">
             <i class="fas fa-bars"></i>
         </div> --}}
-        <a class="navbar-brand px-2" href="{{ url('/') }}">
+        <a class="navbar-brand" href="{{ url('/') }}">
             {{-- {{ config('app.name', 'Laravel') }} --}}
             Todo Day
         </a>
@@ -14,9 +14,9 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
-            <ul class="navbar-nav mr-auto">
+            {{-- <ul class="navbar-nav mr-auto">
 
-            </ul>
+            </ul> --}}
 
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
@@ -38,12 +38,13 @@
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="">
-                                <i class="fas fa-cogs"></i>
+                                <i class="fas fa-cog"></i>
                                 {{ __('setting') }}
                             </a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">
+                                <i class="fas fa-sign-out-alt"></i>
                                 {{ __('Logout') }}
                             </a>
 
