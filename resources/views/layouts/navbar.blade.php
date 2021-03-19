@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
     <div class="container">
         <!-- Menu bars icon -->
-        <div class="cog-box">
-            <i class="fas fa-cog"></i>
+        <div class="bars-box">
+            <i class="fas fa-bars"></i>
         </div>
-        <a class="navbar-brand" href="{{ url('/') }}">
+        <a class="navbar-brand px-2" href="{{ url('/') }}">
             {{-- {{ config('app.name', 'Laravel') }} --}}
             Todo Day
         </a>
@@ -37,11 +37,16 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="">
+                                <i class="fas fa-cogs"></i>
+                                {{ __('setting') }}
+                            </a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
+
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                 @csrf
